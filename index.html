@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body id="main">
+
+    <div class="container-fluid bg-gray position-fixed">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#main">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#where">Что это</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#nature">Природа</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#entertainment">Развлечения</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hotel">Гостиницы и отели</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="position-fixed mountains">
+        <svg width="1647" height="832" viewBox="0 0 1647 832" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M378.5 268L757 831.126H0L378.5 268Z" fill="#616161"/>
+            <path d="M319 541L255 446H383L319 541Z" fill="white"/>
+            <path d="M421 566L340 446H502L421 566Z" fill="white"/>
+            <path d="M378.5 262L502 446H255L378.5 262Z" fill="white"/>
+            <path d="M702.5 176L1143 831.368H262L702.5 176Z" fill="#6C6C6C"/>
+            <path d="M780.769 488.458L713 388H848.539L780.769 488.458Z" fill="white"/>
+            <path d="M639.5 530L555 388H724L639.5 530Z" fill="white"/>
+            <path d="M702 169L849 388H555L702 169Z" fill="white"/>
+            <path d="M1094.5 9L1647 831H542L1094.5 9Z" fill="#898989"/>
+            <path d="M1003 388L918 262H1088L1003 388Z" fill="white"/>
+            <path d="M1150 440L1030 262H1270L1150 440Z" fill="white"/>
+            <path d="M1094 0L1270 262H918L1094 0Z" fill="white"/>
+        </svg>
+    </div>
+
+    <div class="container-fluid container-height-screen d-flex justify-content-center align-items-center flex-column">
+        <div class="container-sm d-flex justify-content-center align-items-center flex-column text-white">
+            <h5 class="text-shadow">Горнолыжный курорт</h5>
+            <h1 class="fw-bold text-shadow">ДОМБАЙ</h1>
+            <h3 class="text-shadow">Приезжайте в Домбай, и Вы его полюбите!</h3>
+            <button class="btn btn-primary" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#application">Записаться</button>
+        </div>
+        <div class="container-sm">
+        </div>
+    </div>
+
+    <div class="container-fluid divider bg-gray" id="where"></div>
+
+    <div class="container-fluid d-flex py-4 flex-column flex-md-row bg-white">
+        <div class="container d-flex mx-0 flex-column justify-content-center">
+            <h1>Что это и где это?</h1>
+            <p>Престижный горный курорт Домбай (Домбайская поляна) расположился на территории Карачаево-Черкесской республики, у подножия Главного хребта Кавказских гор.</p>
+        </div>
+        <div class="container d-flex flex-column">
+            <div class="container-fluid">
+                <img class="w-100 m-2 shadow-img" src="img/where1.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid divider bg-gray" id="nature"></div>
+
+    <div class="container-fluid py-4 bg-white">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1>Природа</h1>
+            <p>Домбай считается климатическим курортом, этому способствуют обилие солнца, мягкий климат, целебные свойства горного воздуха. Каждый отдыхающий, приобретающий путевку в Домбай, получает возможность не только “заразиться” активностью, но и поправить
+                свое здоровье. Оздоравливающее и омолаживающее действие оказывает вода из горных озер, легочные заболевания лечит чистый воздух.</p>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="container-fluid">
+                <img class="w-100 m-2 shadow-img" src="img/nature1.png">
+            </div>
+            <div class="container-fluid">
+                <img class="w-100 m-2 shadow-img" src="img/nature2.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid divider bg-gray" id="entertainment"></div>
+
+    <div class="container-fluid d-flex py-4 bg-white flex-column-reverse flex-lg-row ">
+        <div class="container d-flex flex-wrap">
+            <div class="container w-50 p-5" style="background-color: #C2FF74;">Самые простые трассы (зеленые) подойдут для новичков. В основном, это пологие трассы или “лягушатники”.</div>
+            <div class="container w-50 p-5" style="background-color: #73B3FF;">Более сложные трассы (синие) для тех, кто уже уверенно чувствует себя на склоне и может применить поворот “из упора”.</div>
+            <div class="container w-50 p-5" style="background-color: #FF6A6A;">Для поклонников экстремальных спусков - сложные (красные) трассы, которые отличаются более возросшей крутизной.</div>
+            <div class="container w-50 p-5 text-bg-dark">Любителям острых ощущений - особо сложные (черные) горнолыжные трассы.</div>
+        </div>
+        <div class="container text-end d-flex flex-column justify-content-center">
+            <h1>Лыжные развлечения</h1>
+            <p>Домбай это популярный горнолыжный курорт. Сюда приезжают те, кто увлекается горнолыжным катанием, фрирайдеры и сноубордисты. На сегодняшний день около 20 км трасс приспособлено для активного зимнего отдыха.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid divider bg-gray"></div>
+
+    <div class="container-fluid py-4 bg-white">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1>Другие развлечения</h1>
+            <p>Помимо сезонных развлечений, сделать отдых максимально интересным помогут и другие способы:</p>
+            <ul class="ent-list">
+                <li>конные походы</li>
+                <li>многие пансионаты и гостиницы Домбая предлагают посещение бани, сауны, бассейна</li>
+                <li>танцевально-музыкальные вечера в караоке или ночном клубе</li>
+                <li>активный отдых - бильярд, боулинг, квадрациклы</li>
+                <li>для получения новой порции адреналина туристам предлагаются прогулки на параплане</li>
+            </ul>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="container-fluid">
+                <img class="w-100 m-2 shadow-img" src="img/entertainment1.png">
+            </div>
+            <div class="container-fluid">
+                <img class="w-100 m-2 shadow-img" src="img/entertainment2.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid divider bg-gray" id="hotel"></div>
+
+    <div class="container-fluid py-4 bg-white">
+        <h1 class="text-center">Гостиницы и отели</h1>
+        <div class="container d-flex py-4 gap-4">
+            <div class="bg-lightgray w-25">
+                <img class="container p-4" src="img/hotel1.png">
+                <h3 class="text-center px-1">Гостиница «Кристалл»</h3>
+                <h4 class="text-center py-2">от 3500 ₽</h4>
+            </div>
+
+            <div class="bg-lightgray w-25">
+                <img class="container p-4" src="img/hotel2.png">
+                <h3 class="text-center px-1">Гостиница «Снежная королева»</h3>
+                <h4 class="text-center py-2">от 3500 ₽</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid divider bg-gray d-flex align-items-center" id="contacts">
+        <iframe class="w-50 p-4" id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%94%D0%BE%D0%BC%D0%B1%D0%B0%D0%B9&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <ul>
+            <li class="p-3">Телефон: +7 900 800 20 30</li>
+            <li class="p-3">Почта: dombai@mail.ru</li>
+        </ul>
+    </div>
+
+    <div class="modal fade" id="application" tabindex="-1" aria-labelledby="applicationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="applicationLabel">Форма</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="" method="post">
+                        <input required type="text" class="form-control mb-3" placeholder="Фамилия">
+                        <input required type="text" class="form-control mb-3" placeholder="Имя">
+                        <input required type="text" class="form-control mb-3" placeholder="Очество">
+                        <input required type="text" class="form-control mb-3" placeholder="Почта">
+                        <input required type="text" class="form-control mb-3" placeholder="Телефон">
+
+                        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

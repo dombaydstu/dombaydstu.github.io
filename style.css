@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #00B2FF;
+}
+
+.container-height-screen {
+    min-height: 100vh;
+}
+
+.bg-gray {
+    background-color: #C4C4C4;
+}
+
+.bg-lightgray {
+    background-color: #DCDCDC;
+}
+
+.divider {
+    min-height: 20px;
+}
+
+.shadow-img {
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow {
+    text-shadow: 0 0 10px black;
+}
+
+.ent-list {
+    list-style: none;
+}
+
+.ent-list li::before {
+    content: "";
+    margin-left: -30px;
+    margin-top: 5px;
+    position: absolute;
+    display: block;
+    height: 15px;
+    border-left: 15px solid #C4C4C4;
+    border-radius: 20px;
+}
+
+.mountains {
+    z-index: -1;
+    left: 30%;
+    bottom: -10%;
+}
