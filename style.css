@@ -47,3 +47,7 @@ body {
     left: 30%;
     bottom: -10%;
 }
+
+.error-input {
+    border-color: rgb(255, 72, 72);
+}

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="pristine.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -103,11 +103,11 @@
     <div class="container-fluid divider bg-gray" id="entertainment"></div>
 
     <div class="container-fluid d-flex py-4 bg-white flex-column-reverse flex-lg-row ">
-        <div class="container d-flex flex-wrap">
-            <div class="container w-50 p-2" style="background-color: #C2FF74;">Самые простые трассы (зеленые) подойдут для новичков. В основном, это пологие трассы или “лягушатники”.</div>
-            <div class="container w-50 p-2" style="background-color: #73B3FF;">Более сложные трассы (синие) для тех, кто уже уверенно чувствует себя на склоне и может применить поворот “из упора”.</div>
-            <div class="container w-50 p-2" style="background-color: #FF6A6A;">Для поклонников экстремальных спусков - сложные (красные) трассы, которые отличаются более возросшей крутизной.</div>
-            <div class="container w-50 p-2 text-bg-dark">Любителям острых ощущений - особо сложные (черные) горнолыжные трассы.</div>
+        <div class="container d-flex flex-wrap" style="background-image: linear-gradient(white, #73B3FF);">
+            <div class="container w-50 p-2">Самые простые трассы (зеленые) подойдут для новичков. В основном, это пологие трассы или “лягушатники”.</div>
+            <div class="container w-50 p-2">Более сложные трассы (синие) для тех, кто уже уверенно чувствует себя на склоне и может применить поворот “из упора”.</div>
+            <div class="container w-50 p-2">Для поклонников экстремальных спусков - сложные (красные) трассы, которые отличаются более возросшей крутизной.</div>
+            <div class="container w-50 p-2">Любителям острых ощущений - особо сложные (черные) горнолыжные трассы.</div>
         </div>
         <div class="container text-end d-flex flex-column justify-content-center">
             <h1>Лыжные развлечения</h1>
@@ -176,11 +176,11 @@
                 <div class="modal-body">
 
                     <form action="" method="post">
-                        <input required type="text" class="form-control mb-3" placeholder="Фамилия">
-                        <input required type="text" class="form-control mb-3" placeholder="Имя">
-                        <input required type="text" class="form-control mb-3" placeholder="Очество">
-                        <input required type="text" class="form-control mb-3" placeholder="Почта">
-                        <input required type="text" class="form-control mb-3" placeholder="Телефон">
+                        <input required name="capit" type="text" class="form-control mb-3" placeholder="Фамилия">
+                        <input required name="capit" type="text" class="form-control mb-3" placeholder="Имя">
+                        <input required name="capit" type="text" class="form-control mb-3" placeholder="Очество">
+                        <input required type="text" data-pristine-type="email" class="form-control mb-3" placeholder="Почта">
+                        <input required type="text" data-pristine-type="integer" data-pristine-minlength="11" data-pristine-maxlength="11" class="form-control mb-3" placeholder="Телефон">
 
                         <button type="submit" class="btn btn-primary">Отправить заявку</button>
                     </form>
@@ -189,6 +189,8 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
